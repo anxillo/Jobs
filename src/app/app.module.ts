@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
 import {JobService} from "./job.service";
 import { SearchComponent } from './search/search.component';
+import { PaginationComponent } from './pagination/pagination.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { SearchComponent } from './search/search.component';
     FooterComponent,
     DashboardComponent,
     AboutComponent,
-    SearchComponent
+    SearchComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
