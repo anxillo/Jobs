@@ -1,0 +1,9 @@
+<div class="input-group stylish-input-group">
+    <input type="text" class="form-control"  placeholder="Search" #search type="text" (keyup.enter)="gotoDetail(search.value)">
+    <span class="input-group-addon">
+                        <button type="submit" (click)="gotoDetail(search.value)">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </span>
+</div>
+

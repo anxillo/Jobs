@@ -1,0 +1,28 @@
+
+<nav class="navbar navbar-toggleable-md navbar-inverse  bg-primary fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu" aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+    </button>
+    <a class="navbar-brand" href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Jobs</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerMenu">
+      <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/dashboard/1">List</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-7">
+      <app-search></app-search>
+    </div>
+    <div class="col-5">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
+</div>

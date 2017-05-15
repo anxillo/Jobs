@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <tr *ngFor="let job of jobs">
+    <td>{{job.time *1000 | date:'dd.MM'}}</td>
+    <td>
+      <a href="{{job.link}}" target="_blank">{{job.title}}
+        <span class="badge badge-default">{{job.searchword}}</span>
+        <span class="badge badge-primary">{{job.location}}</span>
+      </a>
+    </td>
+    <td>
+      <a href="{{detailUrl}}{{job.jobs_id}}" target="_blank" >
+        <i class="fa fa-file-text-o fa-lg" aria-hidden="true"> </i>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
