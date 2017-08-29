@@ -36,7 +36,7 @@ export class DashboardComponent implements OnInit {
 
   changeUrl(params) {
     if (params.hasOwnProperty('keyword')) {
-      this.jobsUrl = this.baseUrl + '&filter[]=title,cs,' + params['keyword'];
+      this.jobsUrl = this.baseUrl + '&filter[]=title,cs,' + params['keyword'] + '&filter[]=firm,cs,' + params['keyword'] + '&satisfy=any';
     } else {
       this.jobsUrl = this.baseUrl;
     }
